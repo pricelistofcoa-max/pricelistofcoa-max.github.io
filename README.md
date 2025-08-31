@@ -14,7 +14,7 @@
     header {
       background-color: #472678;
       color: white;
-      padding: 15px;
+      padding: 10px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -123,7 +123,7 @@
 </head>
 <body>
   <header>
-    <div>CoA Price List</div>
+    <div>COA PRICE LIST</div>
     <button class="burger">☰</button>
     <div class="menu" id="burgerMenu">
       <a href="#" data-section="home">Home</a>
