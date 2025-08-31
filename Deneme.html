@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoA Price List</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: white;
+    }
+
+    header {
+      background-color: purple;
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    .burger {
+      font-size: 28px;
+      cursor: pointer;
+      color: white;
+      background: none;
+      border: none;
+      user-select: none;
+    }
+
+    /* Burger Menü */
+    .menu {
+      position: absolute;
+      top: 60px; /* header ile çakışmasın */
+      right: 10px;
+      background-color: #000;
+      border: 2px solid purple;
+      padding: 10px;
+      border-radius: 10px;
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      max-height: 400px; /* Çok uzun olursa */
+      overflow-y: auto;  /* Scroll ile aşağı kayabilsin */
+      z-index: 1000;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      padding: 6px 12px;
+      border: 1px solid purple;
+      border-radius: 6px;
+      background-color: black;
+    }
+
+    .menu a:hover {
+      background-color: purple;
+    }
+
+    .search-container {
+      padding: 10px;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .search-container input {
+      width: 80%;
+      padding: 8px;
+      border: 2px solid purple;
+      border-radius: 5px;
+      background-color: black;
+      color: white;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .item {
+      border: 1px solid purple;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      background-color: #111;
+      color: white;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>CoA Price List</div>
+    <button class="burger">☰</button>
+    <div class="menu" id="burgerMenu">
+      <a href="#" data-section="home">Home</a>
+      <a href="#" data-section="ores">Ores</a>
+      <a href="#" data-section="bars">Bars</a>
+      <a href="#" data-section="logs">Logs</a>
+      <a href="#" data-section="relics">Relics</a>
+      <a href="#" data-section="fishes">Fishes</a>
+      <a href="#" data-section="spellbinding">Spellbinding</a>
+      <a href="#" data-section="alchemy">Alchemy</a>
+      <a href="#" data-section="armors">Armors</a>
+      <a href="#" data-section="weapons">Weapons</a>
+      <a href="#" data-section="tools">Tools</a>
+      <a href="#" data-section="bossparts">Boss Parts</a>
+      <a href="#" data-section="eventitems">Event Items</a>
+      <a href="#" data-section="others">Others</a>
+    </div>
+  </header>
+
+  <div class="search-container">
+    <input type="text" id="search" placeholder="Search items...">
+  </div>
+
+  <div class="content" id="content">
+    <h1>Welcome!</h1>
+  </div>
+
+  <script>
+    const burger = document.querySelector('.burger');
+    const menu = document.getElementById('burgerMenu');
+    const content = document.getElementById('content');
+    const search = document.getElementById('search');
+
+    const items = {
+      ores: ["Copper Ore","Tin ore","Iron ore","Salt","Coal","Crimstell ore","Silver ore","Gold ore","Pink salt","Mythan ore","Cobalt ore","Varaxium","Black salt","Magic ore"],
+      bars: ["Copper Bar","Iron bar","Steel bar","Crimsteel bar","silver bar","Gold nugget","Gold bar","Mythan bar","Cobalt bar","Varax bar","Magic bar"],
+      logs: ["Pine Log","Dead log","Birch log","Applewood","Willow log","Oak log","Chestnut log","Maple log","Olive log","Stinkwood","Magic log","Palmwood","Pearwood","Lime wood"],
+      relics: ["Accuracy relic","Guarding Relic","Healing relic","Wealth relic","Power relic","Nature relic","Fire relic","Damage relic","Leeching relic","Experience relic","Wisdom relic","Ice relic","Cursed relic","Efficiency relic","Affliction relic"],
+      fishes: ["Anchovies","Gold Fish","Mackerel","Squid","Sardine","Eel","Anglerfish","Trout","Jellyfish","Bass","Herringbone","Tuna","Lobster","Sea turtle","Manta ray","Shark","Orca","Giant squid","Earthworm","Iceworm","Corpseworm","Toxicworm","Sandworm","Beetle","Grasshopper","Wasp","Scallop","Crab"],
+      spellbinding: ["Book","Magic essence"],
+      alchemy: ["Bat eye","Pink gelatin","Fishing spider eye","Brown mushroom","Forest spider eye","Cow skull","Forestbat eye","Frozen gelatin","Snow core","Sapling leaf","Ice spider eye","Cave spider eye","Skeletal bat eye","Sapphire scarab leg","Cave bat eye","Envenomed blood","Raptor claw","Ruby scarab leg","Forest fiend eye","Desert raptor claw","Rock fiend eye","Hornet antena","Luminant gelatin","Juvenile eye","Ancient bat eye","Ice raptor claw","Spectral flintstone","Arocite scarab leg","Shadow flintstone","Phantom flintstone","Spectral fiend eye","Phantom fiend eye","Magnetite scarab leg","Corrupted eye","Golemite bat eye","Golemite fiend eye","Tormented eye","Disdain Eye","Baby dragon spine","Ragefull eye","Potion","Mining potion","Woodcutting potion","Fishing potion","Smithing potion","Crafting potion","Cooking potion","Spellbinding potion","Taskmaster's brew","Prospector's brew","Lumberjacks ale","Blacksmith's stout","Artisan's syrup","Angler's elixir","Chef's kiss","Imbuer's wine","Spellpower potion","Concentrated elixir","Divine clarity","Titan's strength","Duelist's draft","Stonebound salve","Backlash balm","Berserker potion","Arcanist's wrath","Forsworn focus","Antidote","Frostskin potion","Arctic potion","Scavenger's balm","Vampirism potion","Assasin's tonic","Auric bloom","Mirrorback brew","Golem's power","Guardian's bulwark","Quietus","Midas brew","Featherwalk potion","Sanguiene oath","Dance of the Undead","Gilded transmutation","Cloudwalk potion","Distilled extract","Provacation potion","Stigoi's convenant","Death's rally"],
+      armors: ["Copper Armor","Iron armor","Steel armor","Crimsteel armor","Mythan armor","Cobalt armor","Varax armor","Glacial armor","Deadrock armor","Spectral armor","Phantom armor","Novice armor","Apprentice armor","Schoolar armor","Expert armor","Adept armor","Highmage armor","Nightspoon armor"],
+      weapons: ["Broken wooden sword","Copper Sword","Iron sword","Rusty steel sword","Steel sword","Sharper steel sword","Crimsteel sword","Mythan sword","Sharper mythan sword","Cobalt sword","Chaotic mythan sword","Varaxite sword","Glacial blade","Nature's blade","Spectral sword","Phantom sword","Ancient scimitar","Wand","Fire staff","Ice staff","Nature staff","Cursed staff","Elder fire staff","Elder ice staff","Elder nature staff","Elder cursed staff","Nightspoon staff"],
+      tools: ["Copper Axe","Copper pickaxe","Copper rod","Copper secateurs","Iron axe","Iron pickaxe","Iron rod","Iron secateurs","Steel axe","Steel pickaxe","Steel rod","Steel secateurs","Crimsteel axe","Crimsteel pickaxe","Crimsteel rod","Crimsteel secateurs","Mythan axe","Mythan pickaxe","Mythan rod","Mythan secateurs","Cobalt axe","Cobalt pickaxe","Cobalt rod","Cobalt secateurs","Varax axe","Varax pickaxe","Varax rod","Varax secateurs","Magic axe","Magic pickaxe","Magic rod","Byromera secateurs","Ancient axe","Ancient pickaxe","Ancient rod"],
+      bossparts: ["Balance fragment","Golemite slab","Golemite shard","Golemite eye","Golemite orb","Dragon scale","Dragon eye","Dragon claw","Sliver of rage","Sliver of corrpution","Sliver of disdain","Sliver of torment","Nydarax leg","Nydarax eye","Gold key","Mummy bandage","Mummy soul"],
+      eventitems: ["Egg ring"],
+      others: ["Ruby","Sapphire","Emerald","Arosite","Sandstone shield","Scorpion shield","Deadrock shield","Ancient shield","Iron spade","Crimsteel spade","Mythan spade","Golemite spade","Ancient spade","Saving grace","Bat amulet","Nature amulet","Amulet of focus","Porspector's necklace","Ruby necklace","Sapphire necklace","Emerald necklace","Arosite necklace","Magnetite necklace","Battle necklace","Scorpion gauntlets","Raptor gloves","Desert raptor gloves","Ice raptor gloves","Cactus gloves","Frozen skull","Icy right half","Icy left half","Ring of treasure","Nature ring","Bat ring","Ring of might","Infernal ring","Cactus ring","Snake charm","Infernal hammer","Ring of violation","Pendant of serenity","Inferno tome","Consume tome","Blizzard tome","Torture tome"]
+    };
+
+    // Menü aç/kapa
+    burger.addEventListener('click', () => {
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    });
+
+    // Menü dışında tıklanınca kapanma
+    document.addEventListener('click', (e) => {
+      if (!menu.contains(e.target) && !burger.contains(e.target)) {
+        menu.style.display = 'none';
+      }
+    });
+
+    // Menüden kategori seçimi
+    document.querySelectorAll('.menu a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const section = link.getAttribute('data-section');
+        content.innerHTML = "";
+
+        if (section === "home") {
+          content.innerHTML = "<h1>Welcome</h1>";
+        } else if (items[section]) {
+          items[section].forEach(item => {
+            const div = document.createElement('div');
+            div.className = 'item';
+            div.textContent = item;
+            content.appendChild(div);
+          });
+        }
+
+        menu.style.display = 'none';
+      });
+    });
+
+    // Arama motoru
+    search.addEventListener('input', () => {
+      const query = search.value.toLowerCase();
+      content.innerHTML = "";
+      let found = false;
+
+      Object.values(items).forEach(sectionItems => {
+        sectionItems.forEach(item => {
+          if (item.toLowerCase().includes(query)) {
+            const div = document.createElement('div');
+            div.className = 'item';
+            div.textContent = item;
+            content.appendChild(div);
+            found = true;
+          }
+        });
+      });
+
+      if (!found && query) {
+        content.innerHTML = "<p>No items found.</p>";
+      }
+
+      if (!query) {
+        content.innerHTML = "<h1>Welcome</h1>";
+      }
+    });
+  </script>
+</body>
+</html>
