@@ -4,8 +4,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CoA Price List</title>
   <style>
+   h1, .project-name, .header {
+  display: none !important;
+}
     body {
       margin: 0;
+      padding: 0;
       font-family: Arial, sans-serif;
       background-color: black;
       color: white;
@@ -13,6 +17,7 @@
 
     header {
       background-color: #472678;
+      margin: 0;
       color: white;
       padding: 10px;
       display: flex;
