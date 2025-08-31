@@ -418,8 +418,8 @@
     function renderHome() {
       content.innerHTML = `
         <div class="home">
-          <h1>Welcome!</h1>
-          <h3>Little information about this server: This server created for help Curse of Aros community</h3>
+          <h2>Welcome!</h2>
+          <h4>Little information about this server: This server created for help Curse of Aros community</h4>
           <p>There you are can search prices of items</p>
           <p class="note">Note: Search full name of items for get good result and tap item name for get information about item</p>
           <p>Join my discord server for give suggestions or help me update prices </p>
