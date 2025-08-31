@@ -122,9 +122,6 @@
 
   <div class="content" id="content">
     <h1>Welcome!</h1>
-    <h2>There you are will find prices of items</h2>
-    <h2>Note:Search full name of item for get result</h2>
-    
   </div>
 
   <script>
