@@ -1,4 +1,4 @@
-6<html lang="en">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -99,6 +99,10 @@
     h4 {
       text-align: center;
       color: lightblue ;
+    } 
+    pre {
+      text-align: center;
+      color: lime ;
     } 
     .home {
       text-align: center;
@@ -415,23 +419,23 @@
           <h4>Funny informations about CoA:</h4>
           <pre>First 120 base normal player
  is Saketas</pre>
- <hr>
+ 
           <pre>First 120 base Lone Wolf player
  is Devotion</pre>
- <hr>
+ 
           <pre>Most expensive CoA item is Jester hat</pre>
           <a href="https://imgbb.com/"><img src="https://i.ibb.co/v6zrJQrz/Jester-Hat-m.png" alt="Jester-Hat-m" border="0"></a>
-          <hr>
+          
           <pre>Most useless CoA Item is Hammer</pre>
           <a href="https://imgbb.com/"><img src="https://i.ibb.co/m5v6S2LK/Hammer-m.png" alt="Hammer-m" border="0"></a>
-          <hr>
+          
           <pre>First pet in CoA is Bat pet</pre>
           <a href="https://imgbb.com/"><img src="https://i.ibb.co/qLY4gby3/Pet-bat-sm.gif" alt="Pet-bat-sm" border="0"></a>
-          <hr>
+          
           <pre>First item in CoA is Potion
  (I posted first potion design)</pre>
           <a href="https://imgbb.com/"><img src="https://i.ibb.co/ym2qbwkV/20200713113545-Potion-m.png" alt="20200713113545-Potion-m" border="0"></a>
-          <hr>
+          
           <h4>Join my discord server for give suggestions or help me update prices </h4>
           <a class="btn-discord" href="https://discord.gg/QAZEkeYc6w" target="_blank" rel="noopener">Discord</a>
         </div>
