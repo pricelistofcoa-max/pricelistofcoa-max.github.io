@@ -1,4 +1,4 @@
-<html lang="en">
+6<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -99,11 +99,7 @@
     h4 {
       text-align: center;
       color: lightblue ;
-    }
-    pre {
-      text-align: center;
-      color:  lime;
-    }
+    } 
     .home {
       text-align: center;
       margin-top: 10px;
