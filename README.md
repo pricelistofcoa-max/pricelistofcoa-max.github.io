@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CoA Price List</title>
   <style>
-     h1, .project-name, .header {
+  h1, .project-name, .header {
   display: none !important;
 }
 
@@ -404,18 +404,18 @@
           <h4>There you are can search prices of items</h4>
           <h4 class="note">Note: Search full name of items for get good result and tap item name for get information about item</h4>
           <h4>Funny informations about CoA:</h4>
-          <pre>First 120 base normal player
- is Saketas</pre>
-          <pre>First 120 base Lone Wolf player
- is Devotion</pre>
-          <pre>Most expensive CoA item is Jester hat</pre>
+          <h4>First 120 base normal player
+ is Saketas</h4>
+          <h4>First 120 base Lone Wolf player
+ is Devotion</h4>
+          <h4>Most expensive CoA item is Jester hat</h4>
           <a href="https://imgbb.com/"><img src="https://i.ibb.co/v6zrJQrz/Jester-Hat-m.png" alt="Jester-Hat-m" border="0"></a>
-          <pre>Most useless CoA Item is Hammer</pre>
+          <h4>Most useless CoA Item is Hammer</h4>
           <a href="https://imgbb.com/"><img src="https://i.ibb.co/m5v6S2LK/Hammer-m.png" alt="Hammer-m" border="0"></a>
-          <pre>First pet in CoA is Bat pet</pre>
+          <h4>First pet in CoA is Bat pet</h4>
           <a href="https://imgbb.com/"><img src="https://i.ibb.co/qLY4gby3/Pet-bat-sm.gif" alt="Pet-bat-sm" border="0"></a>
-          <pre>First item in CoA is Potion
- (I posted first potion design)</pre>
+          <h4>First item in CoA is Potion
+ (I posted first potion design)</h4>
           <a href="https://imgbb.com/"><img src="https://i.ibb.co/ym2qbwkV/20200713113545-Potion-m.png" alt="20200713113545-Potion-m" border="0"></a>
           <h4>Join my discord server for give suggestions or help me update prices </h4>
           <a class="btn-discord" href="https://discord.gg/QAZEkeYc6w" target="_blank" rel="noopener">Discord</a>
