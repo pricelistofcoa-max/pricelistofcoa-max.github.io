@@ -40,8 +40,8 @@
   color: orange;
   font-weight: bold;
 }
-  h1, .project-name, .header {
-  display: none !important;
+  header, h1{
+  display: none;
   }
 
     body {
