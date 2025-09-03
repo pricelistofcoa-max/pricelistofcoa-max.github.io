@@ -40,10 +40,9 @@
   color: orange;
   font-weight: bold;
 }
-  header, h1{
-  display: none;
-  }
-
+header, h1 {
+  display: none;
+}
     body {
       margin: 0;
       font-family: Arial, sans-serif;
