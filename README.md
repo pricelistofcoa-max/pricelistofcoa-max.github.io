@@ -4,9 +4,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CoA Price List</title>
   <style>
-  header, h1 {
-    display: none;
-  } 
+  .yellow {
+  color: yellow;
+  font-weight: bold;
+}
+.tblue {
+  color: lightblue;
+  font-weight: bold;
+}
+.lightblue {
+  color: #00bfff;
+  font-weight: bold;
+}
+.red {
+  color: red;
+  font-weight: bold;
+}
+.blue {
+  color: blue;
+  font-weight: bold;
+}
+.gray {
+  color: gray;
+  font-weight: bold;
+}
+.eblue {
+  color: #5865F2;
+  font-weight: bold;
+}
+.lime {
+  color: lime;
+  font-weight: bold;
+}
+.orange {
+  color: orange;
+  font-weight: bold;
+}
+  h1, .project-name, .header {
+  display: none !important;
+  }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -350,7 +387,7 @@
       "Deadrock armor":"hh",
       "Spectral armor":"hh",
       "Phantom armor":"hh",
-      "Nightspoon armor":"hh"
+      "Nightspoon armor":"hh",
     };
 
     // --- yardımcı fonksiyonlar ---
@@ -398,16 +435,16 @@
       content.innerHTML = `
         <div class="home">
           <h2>Welcome!</h2>
-          <h3>Disclaimer:We are not responsible for any discrepancies in prices.</h3>
-          <h4>Little information about this server: This server created in 01/09/2025 for help Curse of Aros community</h4>
+          <h3><span class="red">Disclaimer : </span><span class="red">We are not responsible for any discrepancies in prices.</span></h3>
+          <h4>This server created in <span class="tblue">01/09/2025</span> by <span class="orange">WnR Hacker</span> for help Curse of Aros community</h4>
           <h4>There you are can search prices of items</h4>
-          <h4 class="note">Note: Search full name of items for get good result and tap item name for get information about item</h4>
-          <h4>Funny informations about CoA:</h4>
-          <h4>First 120 base normal player
- is Saketas</h4>
-          <h4>First 120 base Lone Wolf player
- is Devotion</h4>
-          <h4>Most expensive CoA item is Jester hat</h4>
+          <h4 class="note"><span class="red">Note</span>: Search full name of items for get good result and tap item name for get information about item</h4>
+          <h4><span class="lime">Funny informations about CoA:</span></h4>
+          <h4>First <span class="yellow">120 base</span> normal player
+ is <span class="lightblue">Saketas</span></h4>
+          <h4>First <span class="yellow">120 base</span> <span class="gray">Lone Wolf</span> player
+ is <span class="gray">Devotion</span></h4>
+          <h4>Most expensive CoA item is <span class="red">Je</span><span class="lime">st</span><span class="blue">er</span> hat</h4>
           <a href="https://imgbb.com/"><img src="https://i.ibb.co/v6zrJQrz/Jester-Hat-m.png" alt="Jester-Hat-m" border="0"></a>
           <h4>Most useless CoA Item is Hammer</h4>
           <a href="https://imgbb.com/"><img src="https://i.ibb.co/m5v6S2LK/Hammer-m.png" alt="Hammer-m" border="0"></a>
@@ -416,7 +453,7 @@
           <h4>First item in CoA is Potion
  (I posted first potion design)</h4>
           <a href="https://imgbb.com/"><img src="https://i.ibb.co/ym2qbwkV/20200713113545-Potion-m.png" alt="20200713113545-Potion-m" border="0"></a>
-          <h4>Join my discord server for give suggestions or help me update prices </h4>
+          <h4><span class="eblue">Join my discord server for give suggestions or help me update prices </span></h4>
           <a class="btn-discord" href="https://discord.gg/QAZEkeYc6w" target="_blank" rel="noopener">Discord</a>
         </div>
       `;
