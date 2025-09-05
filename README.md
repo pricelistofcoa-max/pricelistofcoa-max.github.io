@@ -172,7 +172,7 @@ header, h1 {
       <a href="#" data-section="Logs">Logs</a>
       <a href="#" data-section="Relics">Relics</a>
       <a href="#" data-section="Fishes">Fishes</a>
-      <a href="#" data-section="spellbinding">Spellbinding</a>
+      <a href="#" data-section="SpellBinding">Spellbinding</a>
       <a href="#" data-section="Alchemy">Alchemy</a>
       <a href="#" data-section="Potions">Potions</a>
       <a href="#" data-section="Armors">Armors</a>
