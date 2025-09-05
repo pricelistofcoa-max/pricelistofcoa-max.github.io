@@ -631,9 +631,9 @@ header, h1 {
         <div class="home">
           <h2>Welcome!</h2>
           <h3><span class="red">Disclaimer : </span><span class="red">We are not responsible for any discrepancies in prices.</span></h3>
-          <h4>This server created on <span class="tblue">01/09/2025</span>to help Curse of Aros community</h4>
+          <h4>This server was created on <span class="tblue">01/09/2025</span>to help Curse of Aros community</h4>
           <h4>Here you can search for the prices of items</h4>
-          <h4 class="note"><span class="red">Note</span>: Search full name of the item to get better result and tap the item name to get information about the item</h4>
+          <h4 class="note"><span class="red">Note</span>: Search full name of the item to get better results and tap the item name to get information about the item</h4>
           <h4><span class="lime">Funny informations about CoA:</span></h4>
           <h4>First <span class="yellow">120 base</span> normal player
  is <span class="lightblue">Saketas</span></h4>
