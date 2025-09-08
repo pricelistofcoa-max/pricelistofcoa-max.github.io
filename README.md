@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CoA Price List</title>
   <style>
+  html {
+  overflow-y: scroll; /* her zaman scroll barı göster */
+}
   .yellow {
   color: yellow;
   font-weight: bold;
