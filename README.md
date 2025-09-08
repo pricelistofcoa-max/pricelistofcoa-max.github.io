@@ -34,7 +34,7 @@
       position: fixedx;
       top: 0;
       left: 0;
-      display: flex;
+      display: fixed;
       justify-content: space-between;
       align-items: center;
       z-index: 1000;
