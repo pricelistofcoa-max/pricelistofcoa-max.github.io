@@ -162,7 +162,8 @@
       <a href="#" data-section="Others">Others</a>
     </div>
   </header>
-
+<br>
+<br>
   <div class="search-container">
     <input type="text" id="search" placeholder="Search items...">
   </div>
