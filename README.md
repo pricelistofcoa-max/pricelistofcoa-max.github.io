@@ -21,7 +21,8 @@
       background-color: #000;
       font-family: Arial, sans-serif;
       color: white;
-      display: flex;
+      position: fixed;
+      display: fixed;
       flex-direction: column;
       min-height: 100vh;
     }
@@ -30,7 +31,7 @@
       width: 100%;
       padding: 15px 20px;
       box-sizing: border-box;
-      position: flex;
+      position: fixedx;
       top: 0;
       left: 0;
       display: flex;
@@ -44,6 +45,7 @@
       cursor: pointer;
       color: white;
       background: none;
+      
       border: none;
       user-select: none;
     }
@@ -81,11 +83,11 @@
     .search-container {
       padding: 10px;
       text-align: center;
-      margin-top: 10px;
+      margin-top: 40px;
     }
 
     .search-container input {
-      width: 80%;
+      width: 95%;
       padding: 8px;
       border: 2px solid #472678;
       border-radius: 5px;
