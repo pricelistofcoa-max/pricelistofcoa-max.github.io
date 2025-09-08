@@ -30,7 +30,7 @@
       width: 100%;
       padding: 15px 20px;
       box-sizing: border-box;
-      position: fixed;
+      position: flex;
       top: 0;
       left: 0;
       display: flex;
