@@ -77,20 +77,17 @@
       text-align: center;
       margin-top: 10px;
     }
-
     .search-container input {
-      width: 98%;
+      width: 100%;
       padding: 8px;
       border: 2px solid #472678;
       border-radius: 5px;
       background-color: black;
       color: white;
     }
-
     .content {
       padding: 20px;
     }
-
     .item {
       border: 1px solid #472678;
       padding: 10px;
@@ -99,7 +96,6 @@
       background-color: #111;
       color: white;
     }
-   
     .home {
       text-align: center;
       margin-top: 10px;
@@ -138,7 +134,7 @@
     <div id="header-title">COA PRICE LIST</div>
     <button class="burger">☰</button>
     <div class="menu" id="burgerMenu">
-      <a href="#" data-section="home">Home</a>
+      <a href="#" data-section="Home">Home</a>
       <a href="#" data-section="Ores">Ores</a>
       <a href="#" data-section="Bars">Bars</a>
       <a href="#" data-section="Logs">Logs</a>
