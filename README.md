@@ -15,25 +15,28 @@
   h1 {
   display: none;
   }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: black;
-      color: white;
-    }
     header {
-      position: relative;
-      width: 100%;
-      margin: 0;
-      padding: 10px 20px;
-      box-sizing: border-box;
-      background-color: #472678;
+      position: fixed; /* Header yapışık */
+      top: 0;
+      left: 0;
+      width: 100%; /* Tüm cihazlarda tam genişlik */
+      background-color: #472678; /* Mor renk */
       color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      }
+      padding: 20px;
+      font-size: 24px;
+      text-align: center;
+      z-index: 1000; /* Üstte gözükmesi için */
+    }
 
+    /* Body için boşluk header kadar */
+    body {
+      font-family: Arial, sans-serif;
+      margin-top: 80px; /* Header yüksekliği kadar boşluk bırak */
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 20px;
+    }
+    
     .burger {
       font-size: 28px;
       cursor: pointer;
