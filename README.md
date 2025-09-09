@@ -21,7 +21,7 @@
       background-color: #000;
       font-family: Arial, sans-serif;
       color: white;
-      position: fixed;
+      position: flex;
       display: fixed;
       flex-direction: column;
       min-height: 100vh;
@@ -31,7 +31,7 @@
       width: 100%;
       padding: 15px 20px;
       box-sizing: border-box;
-      position: fixedx;
+      position: fixed;
       top: 0;
       left: 0;
       display: fixed;
