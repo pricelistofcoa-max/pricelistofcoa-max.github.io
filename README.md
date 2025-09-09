@@ -134,7 +134,7 @@
     <div id="header-title">COA PRICE LIST</div>
     <button class="burger">☰</button>
     <div class="menu" id="burgerMenu">
-      <a href="#" data-section="Home">Home</a>
+      <a href="#" data-section="home">Home</a>
       <a href="#" data-section="Ores">Ores</a>
       <a href="#" data-section="Bars">Bars</a>
       <a href="#" data-section="Logs">Logs</a>
