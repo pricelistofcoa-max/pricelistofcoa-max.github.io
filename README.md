@@ -22,6 +22,7 @@
       width: 100%; /* Tüm cihazlarda tam genişlik */
       background-color: #472678; /* Mor renk */
       color: white;
+      display: flex;
       padding: 20px;
       font-size: 24px;
       text-align: center;
@@ -32,11 +33,11 @@
     body {
       font-family: Arial, sans-serif;
       margin-top: 80px; /* Header yüksekliği kadar boşluk bırak */
-      background-color: #f0f0f0;
+      background-color: #black;
       text-align: center;
       padding: 20px;
     }
-    
+
     .burger {
       font-size: 28px;
       cursor: pointer;
