@@ -12,40 +12,35 @@
   color: #5865F2;
   font-weight: bold;
   }
-  h1 {
+  header, h1 {
   display: none;
   }
-    header {
-      position: fixed; /* Header yapışık */
-      top: 0;
-      left: 0;
-      width: 100%; /* Tüm cihazlarda tam genişlik */
-      background-color: #472678; /* Mor renk */
-      color: white;
-      display: flex;
-      padding: 10px 20px;
-      font-size: 24px;
-      text-align: center;
-      z-index: 1000; /* Üstte gözükmesi için */
-      justify-content: space-between;
-      align-items: center;
-   } 
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      margin-top: 50px; /* Header yüksekliği kadar boşluk bırak */
       background-color: black;
       color: white;
-      text-align: center;
-      padding: 20px;
     }
-   .burger {
+    header {
+      background-color: #472678;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      position: relative;
+    }
+
+    .burger {
       font-size: 28px;
       cursor: pointer;
       color: white;
       background: none;
       border: none;
       user-select: none;
-   } 
+    }
+
+    /* Burger Menü */
     .menu {
       position: absolute;
       top: 60px;
@@ -61,41 +56,48 @@
       overflow-y: auto;
       z-index: 1000;
     }
+
     .menu a {
       color: white;
       text-decoration: none;
-      padding: 2px 4px;
+      padding: 6px 12px;
       border: 1px solid #472678;
       border-radius: 6px;
       background-color: black;
     }
+
     .menu a:hover {
       background-color: #472678;
     }
+
     .search-container {
       padding: 10px;
       text-align: center;
       margin-top: 10px;
     }
+
     .search-container input {
-      width: 100%;
+      width: 80%;
       padding: 8px;
       border: 2px solid #472678;
       border-radius: 5px;
       background-color: black;
       color: white;
     }
+
     .content {
       padding: 20px;
     }
+
     .item {
       border: 1px solid #472678;
-      padding: 20px;
+      padding: 10px;
       margin: 10px 0;
       border-radius: 5px;
       background-color: #111;
       color: white;
     }
+   
     .home {
       text-align: center;
       margin-top: 10px;
