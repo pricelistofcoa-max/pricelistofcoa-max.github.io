@@ -72,7 +72,7 @@ header {
     .search-container {
       padding: 10px;
       text-align: center;
-      margin-top: 10px;
+      margin-top: 50px;
     }
     .search-container input {
       width: 80%;
