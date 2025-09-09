@@ -23,17 +23,17 @@
       background-color: #472678; /* Mor renk */
       color: white;
       display: flex;
-      padding: 20px;
+      padding: 10px 20px;
       font-size: 24px;
       text-align: center;
       z-index: 1000; /* Üstte gözükmesi için */
     }
 
-    /* Body için boşluk header kadar */
     body {
       font-family: Arial, sans-serif;
       margin-top: 80px; /* Header yüksekliği kadar boşluk bırak */
-      background-color: #black;
+      background-color: black;
+      color: white;
       text-align: center;
       padding: 20px;
     }
