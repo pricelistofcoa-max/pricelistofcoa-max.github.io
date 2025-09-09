@@ -27,8 +27,9 @@
       font-size: 24px;
       text-align: center;
       z-index: 1000; /* Üstte gözükmesi için */
-    }
-
+      justify-content: space-between;
+      align-items: center;
+   } 
     body {
       font-family: Arial, sans-serif;
       margin-top: 80px; /* Header yüksekliği kadar boşluk bırak */
