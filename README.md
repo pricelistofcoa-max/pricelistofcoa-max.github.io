@@ -83,7 +83,7 @@
     .search-container {
       padding: 10px;
       text-align: center;
-      margin-top: 40px;
+      margin-top: 15px;
     }
 
     .search-container input {
