@@ -21,8 +21,8 @@
       background-color: #000;
       font-family: Arial, sans-serif;
       color: white;
-      position: flex;
-      display: flex;
+      position: fixed;
+      display: fixed;
       flex-direction: column;
       min-height: 100vh;
     }
@@ -615,11 +615,11 @@
     function renderHome() {
       content.innerHTML = `
         <div class="home">
-          <h2>Welcome!</h2>
-          <h3><span class="red">Disclaimer : We are not responsible for any discrepancies in prices!</span></h3>
-          <h4>This server created in 01/09/2025 for help Curse of Aros community</h4>
-          <h4>There you are can search prices of items</h4>
-          <h4>Note : Search full name of items for get good result, tap item name for get information about item and and we will update prices every month.</h4>
+          <h3>Welcome!</h3>
+          <h4><span class="red">Disclaimer : We are not responsible for any discrepancies in prices!</span></h4>
+          <h5>This server created in 01/09/2025 for help Curse of Aros community</h5>
+          <h5>There you are can search prices of items</h5>
+          <h5>Note : Search full name of items for get good result, tap item name for get information about item and and we will update prices every month.</h5>
           <h4><span class="eblue">Join my discord server for give suggestions or help me update prices</span> </h4>
           <a class="btn-discord" href="https://discord.gg/QAZEkeYc6w" target="_blank" rel="noopener">Discord</a>
         </div>
