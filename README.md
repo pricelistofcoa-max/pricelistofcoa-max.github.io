@@ -620,7 +620,7 @@
           <h5>This server created in 01/09/2025 for help Curse of Aros community</h5>
           <h5>There you are can search prices of items</h5>
           <h5>Note : Search full name of items for get good result, tap item name for get information about item and and we will update prices every month.</h5>
-          <h4><span class="eblue">Join my discord server for give suggestions or help me update prices</span> </h4>
+          <h5><span class="eblue">Join my discord server for give suggestions or help me update prices</span> </h5>
           <a class="btn-discord" href="https://discord.gg/QAZEkeYc6w" target="_blank" rel="noopener">Discord</a>
         </div>
       `;
