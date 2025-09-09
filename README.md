@@ -52,11 +52,11 @@
       right: 10px;
       background-color: #000;
       border: 2px solid #472678;
-      padding: 7px;
+      padding: 10px;
       border-radius: 10px;
       display: none;
       flex-direction: column;
-      gap: 4px;
+      gap: 5px;
       max-height: 400px;
       overflow-y: auto;
       z-index: 1000;
@@ -79,7 +79,7 @@
     }
 
     .search-container input {
-      width: 95%;
+      width: 98%;
       padding: 8px;
       border: 2px solid #472678;
       border-radius: 5px;
