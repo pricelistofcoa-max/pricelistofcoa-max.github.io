@@ -12,7 +12,7 @@
   color: #5865F2;
   font-weight: bold;
   }
-  header, h1 {
+  h1 {
   display: none;
   }
     body {
@@ -22,15 +22,17 @@
       color: white;
     }
     header {
-      background-color: #472678;
-      color: white;
-      display: flex;
-      position: fixed;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
-      position: relative;
-    }
+  width: 100%;
+  background-color: #472678;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+  margin: 0;
+  box-sizing: border-box;
+}
 
     .burger {
       font-size: 28px;
