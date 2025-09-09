@@ -82,6 +82,7 @@
 
     .search-container {
       padding: 10px;
+      width: 95%;
       text-align: center;
       margin-top: 15px;
     }
