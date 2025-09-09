@@ -16,8 +16,6 @@
   display: none;
   }
     body {
-      display: flex;
-      position: flex;
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: black;
@@ -31,8 +29,6 @@
       box-sizing: border-box;
       background-color: #472678;
       color: white;
-      display: flex;
-      position: fixed;
       justify-content: space-between;
       align-items: center;
       }
