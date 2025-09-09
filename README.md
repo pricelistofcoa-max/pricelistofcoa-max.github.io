@@ -38,31 +38,40 @@
       text-align: center;
       padding: 20px;
     }
-    /* Burger menu container */
-.burger-menu {
-  display: flex;
-  flex-direction: column;
-  padding: 5px; /* reduce overall padding */
-  background-color: #111;
-  border-radius: 5px;
-}
-
-/* Burger menu items */
-.burger-menu a {
-  font-size: 14px;         /* smaller text */
-  padding: 6px 10px;       /* smaller padding */
-  margin: 4px 0;           /* smaller spacing between items */
-  text-decoration: none;
-  color: white;
-  border-radius: 5px;
-  background-color: #111;
-  transition: background 0.3s;
-}
-
-.burger-menu a:hover {
-  background-color: #222;
-} 
-
+   .burger {
+      font-size: 28px;
+      cursor: pointer;
+      color: white;
+      background: none;
+      border: none;
+      user-select: none;
+   } 
+    .menu {
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      background-color: #000;
+      border: 2px solid #472678;
+      padding: 10px;
+      border-radius: 10px;
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      max-height: 400px;
+      overflow-y: auto;
+      z-index: 1000;
+    }
+    .menu a {
+      color: white;
+      text-decoration: none;
+      padding: 4px 8px;
+      border: 1px solid #472678;
+      border-radius: 6px;
+      background-color: black;
+    }
+    .menu a:hover {
+      background-color: #472678;
+    }
     .search-container {
       padding: 10px;
       text-align: center;
