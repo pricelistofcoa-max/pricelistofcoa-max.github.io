@@ -22,17 +22,17 @@
       color: white;
     }
     header {
-  width: 100%;
-  background-color: #472678;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  position: relative;
-  margin: 0;
-  box-sizing: border-box;
-}
+      position: relative;
+      width: 100%;
+      margin: 0;
+      padding: 10px 20px;
+      box-sizing: border-box;
+      background-color: #472678;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      }
 
     .burger {
       font-size: 28px;
