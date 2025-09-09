@@ -21,16 +21,19 @@
       background-color: black;
       color: white;
     }
-    header {
-      background-color: #472678;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
-      position: relative;
-    }
-
+header {
+  background-color: #472678;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;       /* iç boşluk */
+  position: fixed;      /* üstte sabitlemek için */
+  top: 0;               /* sayfanın en üstüne yapışık */
+  left: 0;              /* sol kenara yapışık */
+  width: 100%;          /* ekranın tamamını kapsar */
+  z-index: 1000;        /* diğer içeriklerin üstünde */
+}
     .burger {
       font-size: 28px;
       cursor: pointer;
@@ -39,7 +42,6 @@
       border: none;
       user-select: none;
     }
-
     /* Burger Menü */
     .menu {
       position: absolute;
@@ -56,7 +58,6 @@
       overflow-y: auto;
       z-index: 1000;
     }
-
     .menu a {
       color: white;
       text-decoration: none;
@@ -65,17 +66,14 @@
       border-radius: 6px;
       background-color: black;
     }
-
     .menu a:hover {
       background-color: #472678;
     }
-
     .search-container {
       padding: 10px;
       text-align: center;
       margin-top: 10px;
     }
-
     .search-container input {
       width: 80%;
       padding: 8px;
@@ -84,11 +82,9 @@
       background-color: black;
       color: white;
     }
-
     .content {
       padding: 20px;
     }
-
     .item {
       border: 1px solid #472678;
       padding: 10px;
@@ -97,7 +93,6 @@
       background-color: #111;
       color: white;
     }
-   
     .home {
       text-align: center;
       margin-top: 10px;
