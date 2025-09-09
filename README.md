@@ -32,7 +32,7 @@
    } 
     body {
       font-family: Arial, sans-serif;
-      margin-top: 80px; /* Header yüksekliği kadar boşluk bırak */
+      margin-top: 50px; /* Header yüksekliği kadar boşluk bırak */
       background-color: black;
       color: white;
       text-align: center;
@@ -85,7 +85,7 @@
     }
 
     .search-container input {
-      width: 80%;
+      width: 90%;
       padding: 8px;
       border: 2px solid #472678;
       border-radius: 5px;
