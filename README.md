@@ -64,7 +64,7 @@
     .menu a {
       color: white;
       text-decoration: none;
-      padding: 4px 8px;
+      padding: 2px 4px;
       border: 1px solid #472678;
       border-radius: 6px;
       background-color: black;
