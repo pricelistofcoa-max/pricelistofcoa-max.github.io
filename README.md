@@ -52,11 +52,11 @@
       right: 10px;
       background-color: #000;
       border: 2px solid #472678;
-      padding: 10px;
+      padding: 7px;
       border-radius: 10px;
       display: none;
       flex-direction: column;
-      gap: 5px;
+      gap: 4px;
       max-height: 400px;
       overflow-y: auto;
       z-index: 1000;
