@@ -29,6 +29,7 @@
       box-sizing: border-box;
       background-color: #472678;
       color: white;
+      display: flex;
       justify-content: space-between;
       align-items: center;
       }
