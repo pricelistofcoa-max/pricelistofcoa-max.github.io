@@ -24,7 +24,7 @@
     header {
       background-color: #472678;
       color: white;
-      display: flex;
+      display: fixed;
       justify-content: space-between;
       align-items: center;
       padding: 10px;
