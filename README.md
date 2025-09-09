@@ -15,29 +15,20 @@
   header, h1 {
   display: none;
   }
-      body {
+    body {
       margin: 0;
-      padding: 0;
-      background-color: #000;
       font-family: Arial, sans-serif;
+      background-color: black;
       color: white;
-      position: fixed;
-      display: fixed;
-      flex-direction: column;
-      min-height: 100vh;
     }
     header {
       background-color: #472678;
-      width: 100%;
-      padding: 15px 20px;
-      box-sizing: border-box;
-      position: fixed;
-      top: 0;
-      left: 0;
+      color: white;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      z-index: 1000;
+      padding: 10px;
+      position: relative;
     }
 
     .burger {
@@ -45,7 +36,6 @@
       cursor: pointer;
       color: white;
       background: none;
-      
       border: none;
       user-select: none;
     }
@@ -82,13 +72,12 @@
 
     .search-container {
       padding: 10px;
-      width: 95%;
       text-align: center;
-      margin-top: 15px;
+      margin-top: 10px;
     }
 
     .search-container input {
-      width: 95%;
+      width: 80%;
       padding: 8px;
       border: 2px solid #472678;
       border-radius: 5px;
@@ -165,8 +154,7 @@
       <a href="#" data-section="Others">Others</a>
     </div>
   </header>
-<br>
-<br>
+
   <div class="search-container">
     <input type="text" id="search" placeholder="Search items...">
   </div>
@@ -616,12 +604,12 @@
     function renderHome() {
       content.innerHTML = `
         <div class="home">
-          <h3>Welcome!</h3>
-          <h4><span class="red">Disclaimer : We are not responsible for any discrepancies in prices!</span></h4>
-          <h5>This server created in 01/09/2025 for help Curse of Aros community</h5>
-          <h5>There you are can search prices of items</h5>
-          <h5>Note : Search full name of items for get good result, tap item name for get information about item and and we will update prices every month.</h5>
-          <h5><span class="eblue">Join my discord server for give suggestions or help me update prices</span> </h5>
+          <h2>Welcome!</h2>
+          <h3><span class="red">Disclaimer : We are not responsible for any discrepancies in prices!</span></h3>
+          <h4>This server created in 01/09/2025 for help Curse of Aros community</h4>
+          <h4>There you are can search prices of items</h4>
+          <h4>Note : Search full name of items for get good result, tap item name for get information about item and and we will update prices every month.</h4>
+          <h4><span class="eblue">Join my discord server for give suggestions or help me update prices</span> </h4>
           <a class="btn-discord" href="https://discord.gg/QAZEkeYc6w" target="_blank" rel="noopener">Discord</a>
         </div>
       `;
