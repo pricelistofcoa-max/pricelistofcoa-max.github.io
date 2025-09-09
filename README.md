@@ -90,7 +90,7 @@
     }
     .item {
       border: 1px solid #472678;
-      padding: 10px;
+      padding: 20px;
       margin: 10px 0;
       border-radius: 5px;
       background-color: #111;
