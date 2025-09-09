@@ -25,6 +25,7 @@
       background-color: #472678;
       color: white;
       display: fixed;
+      position: fixed;
       justify-content: space-between;
       align-items: center;
       padding: 10px;
