@@ -565,14 +565,13 @@ header {
     }
 
     function splitNameAndPrice(item) {
-      // "Pink salt Price : 7k each" => { name: "Pink salt", price: "Price : 7k each" }
-      const m = item.match(/(.*?)(\s*price\b.*)$/i);
-      if (m) {
-        return { name: m[1].trim(), price: m[2].trim() };
-      }
-      // fiyat belirtisi yoksa tüm satırı isim olarak kullan
-      return { name: item.trim(), price: '' };
-    }
+  // "Pink salt : 7k each" veya "Pink salt Price : 7k each"
+  const m = item.match(/(.*?)(\s*(price\b.*|:.*))$/i);
+  if (m) {
+    return { name: m[1].trim(), price: m[2].trim() };
+  }
+  return { name: item.trim(), price: '' };
+}
 
     function findLinkForItem(item) {
       const { name } = splitNameAndPrice(item);
