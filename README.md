@@ -4,6 +4,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CoA Price List</title>
   <style>
+      .box {
+      position: relative;
+      width: 250px;
+      height: 100px;
+      background: #111111;
+      display: flex;
+      padding: 20px;
+      margin: 27px;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .box .label {
+      position: relative;
+      z-index: 2;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .border-svg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1; /* yazının arkasında kalır */
+    }
+
+    @media (max-width:250px){
+      .box {width: 90vw; height: 140px; font-size: 20px;}
+    }
   .red {
   color: red;
   font-weight: bold;
@@ -12,27 +45,27 @@
   color: #5865F2;
   font-weight: bold;
   }
-  header, h1 {
+  h1 {
   display: none;
   }
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: black;
+      background-color: #111111;
       color: white;
     }
 header {
-  background-color: #472678;
+  background-color: #8000ff;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;       /* iç boşluk */
-  position: fixed;      /* üstte sabitlemek için */
-  top: 0;               /* sayfanın en üstüne yapışık */
-  left: 0;              /* sol kenara yapışık */
-  width: 100%;          /* ekranın tamamını kapsar */
-  z-index: 1000;        /* diğer içeriklerin üstünde */
+  padding: 10px;       
+  position: fixed;     
+  top: 0;               
+  left: 0;             
+  width: 100%;         
+  z-index: 1000;        
 }
     .burger {
       font-size: 28px;
@@ -47,8 +80,8 @@ header {
       position: absolute;
       top: 60px;
       right: 10px;
-      background-color: #000;
-      border: 2px solid #472678;
+      background-color: #111111;
+      border: 2px solid #8000ff;
       padding: 10px;
       border-radius: 10px;
       display: none;
@@ -62,12 +95,12 @@ header {
       color: white;
       text-decoration: none;
       padding: 6px 12px;
-      border: 1px solid #472678;
+      border: 1px solid #8000ff;
       border-radius: 6px;
-      background-color: black;
+      background-color: #111111;
     }
     .menu a:hover {
-      background-color: #472678;
+      background-color: #8000ff;
     }
     .search-container {
       padding: 10px;
@@ -77,20 +110,20 @@ header {
     .search-container input {
       width: 92%;
       padding: 8px;
-      border: 2px solid #472678;
+      border: 2px solid #8000ff;
       border-radius: 5px;
-      background-color: black;
+      background-color: #111111;
       color: white;
     }
     .content {
       padding: 20px;
     }
     .item {
-      border: 1px solid #472678;
+      border: 1px solid #8000ff;
       padding: 10px;
       margin: 10px 0;
       border-radius: 5px;
-      background-color: #111;
+      background-color: #111111;
       color: white;
     }
     .home {
@@ -102,14 +135,17 @@ header {
       opacity: 0.9;
     }
     .btn-discord {
-      display: inline-block;
+      display: flex;
+      width: 100px;
+      height: 20px;
       margin-top: 14px;
       padding: 10px 18px;
       border-radius: 12px;
       background-color: #5865F2;
       color: #fff;
       text-decoration: none;
-      font-weight: 600;
+      justify-content: center;
+      font-weight: ;
       border: none;
       cursor: pointer;
     }
@@ -154,7 +190,9 @@ header {
     <input type="text" id="search" placeholder="Search items...">
   </div>
 
-  <div class="content" id="content"></div>
+  <div class="content" id="content">
+    
+  </div>
 
   <script>
     const burger = document.querySelector('.burger');
@@ -164,21 +202,21 @@ header {
 
     const items = {
       Ores: ["Copper Ore : 400 each","Tin Ore : 400 each","Iron Ore : 800 each","Salt : 4k each","Coal : 3k-4k each","Crimstell Ore : 3k-4k each","Silver Ore : 4k-5k each","Gold Ore : 2.5k-3k each","Pink Salt : 7k each","Mythan Ore : 10k-12k each","Sandstone : 10k each","Cobalt Ore : 12k-14k each","Varaxium : 13k-15k each","Black Salt : 10k each","Magic Ore : 4k-4.5k each"],
-      Bars: ["Copper Bar : 1k each","Iron Bar : 2k each","Steel Bar : 5k each","Crimsteel Bar : 20k each","Silver Bar : 25k-30k each","Gold Nugget : 30k-40k each","Gold Bar : 700k-800k each","Mythan Bar : 120k-140k each","Cobalt Bar : 120k each","Varax Bar : 160k each ","Magic Bar : 50k-55k each"],
+      Bars: ["Copper Bar : 1k each","Iron Bar : 2k each","Steel Bar : 5k each","Crimsteel Bar : 20k each","Silver Bar : 25k-30k each","Gold Nugget : 30k-40k each","Gold Bar : 700k-800k each","Mythan Bar : 120k-140k each","Cobalt Bar : 120k each","Varax Bar : 160k each ","Magic Bar : 50k-55kk each"],
       Logs: ["Pine Logs  : 1k each","Dead Logs : 2k each","Birch Logs : 3k each","Applewood : 2k each","Willow Logs : 5k each","Oak Logs : 4k-5k each","Chestnut Logs : 7k-8k each","Maple Logs : 7k-8k each","Olive Logs : 11k-12k each","Stinkwood : 8-9k each","Magic Log : 2.3k each","Palm Wood : 4k each","PearWood : 6k-7k each","Lime Wood : 4k-5k each"],
-      Relics: ["Relic of Accuracy : 2k-3k each","Relic of Guarding : 3k each","Relic of Healing : 4k each","Relic of Wealth : 3k each","Relic of Power : 5k each","Relic of Nature : 6k each","Relic of Fire : 8k each","Relic of Damage : 5k each","Relic of Leeching : 4k-5k each","Relic of Experience : 11k each","Relic of Wisdom : 13k each ","Ice relic : 4k-5k each","Cursed relic : 4k each","Relic of Efficiency : 5k each","Relic of Affliction : 4k each"],
-      Fishes: ["Anchovies : 50 each","Gold Fish : 100 each","Mackerel : 500 each","Squid : 1k each","Sardine : 2k each","Eel : 1k each","Anglerfish : 1.5k-2k each","Trout : 10k each","Jellyfish : 500 each","Bass : 20k each","Herringbone : 500 each","Tuna : 5k-6k each","Lobster : 7k each","Sea Turtle : 13k-15k each","Manta Ray : 3k-4k each","Shark : 5k-7k each","Orca : 20k each","Giant Squid : 30-35k each",],
-      Baits: ["Earthworm : 100 each","Iceworm : 200 each","Corpseworm : 300 each","Toxicworm : 400 each","Sandworm : 500 each","Beetle : 1k-2k each","Grasshopper : 3k-5k each","Wasp : 3k-4k each","Scallop : 7k-9k each","Crab : 600 each",],
+      Relics: ["Relic of Accuracy : 2k-3k each","Relic of Guarding : 3k each","Relic of Healing : 4k each","Relic of Wealth : 3k each","Relic of Power : 5k each","Relic of Nature : 6k each","Relic of Fire : 8k each","Relic of Damage : 5k each","Relic of Leeching : 4k-5k each","Relic of Experience : 11k each","Relic of Wisdom : 13k each ","Ice relic : 4k-5k each","Cursed relic : 4k each","Relic of Efficiency : 4k each","Relic of Affliction : 4k each"],
+      Fishes: ["Anchovies : 50 each","Gold Fish : 100 each","Mackerel : 500 each","Squid : 1k each","Sardine : 2k each","Eel : 1k each","Anglerfish : 1.5k-2k each","Trout : 10k each","Jellyfish : 500 each","Bass : 20k each","Herringbone : 500 each","Tuna : 5k-6k each","Lobster : 7k each","Sea Turtle : 13k-15k each","Manta Ray : 3k-4k each","Shark : 10k each","Orca : 25k each","Giant Squid : 40k each",],
+      Baits: ["Earthworm : 10 each","Iceworm : 20 each","Corpseworm : 30 each","Toxicworm : 40 each","Sandworm : 50 each","Beetle : 1k-2k each","Grasshopper : 3k-5k each","Wasp : 3k-4k each","Scallop : 7k-9k each","Crab : 600 each",],
       SpellBinding: ["Book : 1k-1.5k each","Magic Essence : 600 each"],
       Alchemy: ["Bat Eye : 1k each","Pink Gelatin : 3k each","Fishing Spider Eye : 4k each","Brown Mushroom : 4k each","Forest Spider Eye : 4k each","Cow Skull : 8k each","Forest Bat Eye : 8k each","Frozen Gelatin : 8k each","Snow Core : 8k each","Sapling Leaf : 8k each","Ice Spider Eye : 8k each","Cave Spider Eye : 8k each","Skeletal Bat Eye : 8k each","Sapphire Scarab Leg : 10k each","Cave Bat Eye : 8.5k each","Envenomed Blood : 11k each","Raptor Claw : 9k each","Ruby Scarab Leg : 9k each","Forest Fiend Eye : 10k each","Desert Raptor Claw : 12k each","Rock Fiend Eye : 10k each","Hornet Antena : 11k each","Luminant Gelatin : 10k each","Juvenile Eye : 8k each","Ancient Bat Eye : 10k each","Ice Raptor Claw : 10k each","Spectral Flintstone  : 11k each","Arocite Scarab Leg : 10k each","Shadow Flintstone : 8k each","Phantom Flintstone : 12k each","Spectral Fiend Eye : 11k  each","Phantom Fiend Eye : 12k each","Magnetite Scarab Leg : 11k each","Corrupted Eye : 11k each","Golemite Bat Eye : 10k each","Golemite Fiend Eye : 10k each","Tormented Eye : 15k each","Disdain Eye : 20k-22k each","Baby Dragon Spine : 10k each","Ragefull Eye : 15k each"],
       Potions:["Potion : each","Mining Potion : 10k each","Woodcutting Potion : 10k each","Fishing Potion : 10k each","Smithing Potion : 10k each","Crafting Potion : 15k each","Cooking Potion : 15k each","Spellbinding Potion : 17k each","Taskmaster's Brew : 7k each","Prospector's Brew : 15k-20k each","Lumberjack's Ale : 20k each","Blacksmith's Stout : 13k each","Artisan's Syrup : 20k each","Angler's Elixir : 20k each","Chef's Kiss : 18k each","Imbuer's Wine : 25k each","Spellpower Potion : 12k each","Concentrated Elixir : 15k each","Divine Clarity : 20k each","Titan's Strength : 15k each","Duelist's Draft : 10k each","Stonebound Salve : 22k each","Backlash Balm : 15k each","Berserker Potion : 14k each","Arcanist's Wrath : 25k each","Forsworn Focus : 20k each","Antidote : 20k each","Frostskin Potion : 10k each","Arctic Potion : 12k each","Scavenger's Balm : 25k each","Vampirism Potion : 20k each","Assassin's Tonic : 18k each","Auric Bloom : 10k each","Mirrorback Brew : 22k each","Golem's Power : 23k  each","Guardian's Bulwark : 23k each","Quietus : 25k each","Midas Brew : 30k each","Featherwalk Potion : 30k each","Sanguiene Oath : 25k each","Dance of the Undead : 30k each","Gilded Transmutation : 50k each","Cloudwalk Potion : 40k each","Distilled Extract : 50k each","Provocation Potion : 40k each","Strigoi's Covenant : 40k each","Death's Rally : 35k-40k each"],
       Armors: ["ALL SET PRICE = WITHOUT SWORD OR STAFF","Cobalt Set : 2m ","Varax Set : 5m ","Glacial Set : 20m-25m ","Deadrock Set : 20m ","Spectral Set : 15m-20m ","Phantom Set : 30m ","Nightspun Set : 400k "],
       Weapons: ["Sharper Mythan Sword : 80k-100k each","Cobalt Sword : 100k-150k each","Chaotic Mythan Sword : 200k each","Varaxite Sword : 300k each","Glacial Blade : 1m-1.2m each","Nature's Blade : 2m each","Spectral Sword : 10m-13m each","Phantom Sword : 15m each","Ancient Scimitar : 130m each","Fire Staff : 50k each","Ice Staff : 50k each","Nature Staff : 50k each","Cursed Staff : 50k each","Elder Fire Staff : 200k  each","Elder Ice Staff : 200k each","Elder Nature Staff : 200k each","Elder Cursed Staff : 200k each","Nightspun Staff : 200k each"],
       Tools: ["Mythan Axe : 100k each","Mythan Pickaxe : 100k each","Mythan Rod : 100k each","Mythan Secateurs : 80k-100k each","Cobalt Axe : 200k-300k each","Cobalt Pickaxe : 200k-300k each","Cobalt Rod : 200k-300k each","Cobalt Secateurs : 100k-200k each","Varaxite Axe : 300k-400k each","Varaxite Pickaxe : 300k-400k each","Varaxite Rod : 300k-400k  each","Varaxite Secateurs : 300k-400k each","Magic Axe : 300k-400k each","Magic Pickaxe : 300k -400k each","Magic Rod : 300k-400k each","Bryomera Secateurs : 30m-40m each","Ancient Axe : 16-17m each","Ancient Pickaxe : 16-17m each","Ancient Rod : 8m-11m each"],
-      BossParts: ["Balance fragment :  3m each","Golemite Slab : 3m each","Golemite Shard : 4m each","Eye of Golemite : 2m each","Golemite Orb : 3m each","Golemite Artifact : 1.5m each","Dragon Scale : 17k-20k each","Dragon Eye : 8m-10m each","Dragon Claw : 17m-20m each","Dragon Horn : 2m each","Slivers of Rage : 4m-5m/100 each","Slivers of Corruption : 6m-8m/100 each","Slivers of Disdain : 5m-7m/100 each","Slivers of Torment : 6m-8m/100 each","Leg of Nydarax : 40m-45m each","Eye of Nydarax : 2m each","Gold Key : 300k-350k each","Mummy Bandage : 800k each","Mummy Soul : 1.3m each","Ancient Tablet : 3.5k-4k each"],
+      BossParts: ["Balance fragment :  3m each","Golemite Slab : 3m each","Golemite Shard : 4m each","Eye of Golemite : 2m each","Golemite Orb : 3m each","Golemite Artifact : 1.5m each","Dragon Scale : 15k each","Dragon Eye : 11m each","Dragon Claw : 16m each","Dragon Horn : 2m each","Slivers of Rage : 4m-5m/100 each","Slivers of Corruption : 6m-8m/100 each","Slivers of Disdain : 5m-7m/100 each","Slivers of Torment : 6m-8m/100 each","Leg of Nydarax : 40m-45m each","Eye of Nydarax : 2m each","Gold Key : 300k-350k each","Mummy Bandage : 800k each","Mummy Soul : 1.3m each","Ancient Tablet : 5k each"],
       EventItems: ["Sugar Brew : each","Party Hat : each","Santa Hat : each","Jingle Top : each","Jingle Pants : each","Candy Cane : each","Easter Egg : each","Bag of Tricks : each","Bag of Sweets : each","Magic Bag of Treats : each","Pumpking Helm : each","Pumpking Sword : each","Pumpking Shield : each","Party Hat 2 : each","Jester Hat : each","Based Santa Hat : each","Scrooge Hat : each","Scrooge Shirt : each","Pack of Snow : each","Xmas Tree Sword : each","Candy Cane Staff : each","Egg Head : each","Hand of Baphomet : each","Head of Baphomet : each","Pumpkin Zombie Hat : each","Party Hat 3 : each","Classy Jacket : each","Classy Pants : each","Sparkling Grapejuice : each","Antlers : each","Christmas Tree Hat : each","Jingle Hat : each","White Present : each","Red Present : each","Gold Present : each","Carrot Launcher : each","Carrotproof Helmet : each","Carrotproof Vest : each","Egg Ring : each","Party Hat 4 : each","Box of Chocolate : each","Box of Pralines : each","Loveshot : each","Arrow Head : each","Heartseeker : each","Eternal Love : each","Lootkin : each","Bionic Skull : each","Bionic Ribcage : each","Bionic Limbs : each","Scream Mask : each","Birthday Cake : each","Party Hat 5 : each","Blue Balloon : each","Red Balloon : each","Yellow Balloon : each","Green Balloon : each","Bunch of Balloons : each","Snowball Ammo : each","Ring of Snow : each","Snowball Launcher : each","Black Santa Hat : each","Lucky Egg : each","Carrot Rocket : each","Bonka's Barrier : each","Eggy Bludgeon : each","Wabbit Hat : each","Party Hat 6 : each","Party-Crasher : each","Smelly Key : each","Leaky Leek : each","Evileek Staff : each","Evileek Shield : each","Evileek Mask : each","Sleekest : each","Chicken Head : each","Chicken Wings : each","Chicken Feathers : each"
     ],
-      Others: ["Ruby : 50k each","Sapphire : 50k each","Emerald : 70k each","Arosite : 80k each","Sandstone Shield : 2m-3m each","Scorpion Shield : 3.5m each","Deadrock Shield : 4m-4.5m each","Ancient Shield : 130m each","Iron Spade : 20k each","Crimsteel Spade : 20k-40k each","Mythan Spade : 50k-130k each","Golemite Spade : 120k-150k each","Ancient Spade : 800k-1m each","Saving Grace : 120k-150k each","Bat Amulet : 200k each","Nature Amulet : 50k each","Amulet of Focus : 3m each","Prospector's Necklace : 4m each","Ruby Necklace : 300k each","Sapphire Necklace : 300k each","Emerald Necklace : 400k each","Arosite Necklace : 450k each","Magnetite Necklace : 3m each","Battle Necklace : 5m each","Scorpion Gauntlets : 500k each","Raptor Gloves : 700k each","Desert Raptor Gloves : 800k each","Ice Raptor Gloves : 1m each","Cactus Gloves : 4m-5m each","Frozen Skull : 35m each","Icy Right Half : 2m each","Icy Left Half : 2m each","Ring of Treasure : 1m each","Nature Ring : 50k each","Bat Ring : 200k each","Ring of Might : 2m each","Infernal Ring : 3m-4m each","Cactus Ring : 5m-7m each","Snake charm : 3m each","Infernal Hammer : 10m each","Ring of Violation : 20m each","Pendant of Serenity : 15m each","Inferno Tome : 100 each","Consume Tome : 120 each","Blizzard Tome : 50 each","Torture Tome : 200-300 each","Lollipop : 1.3m each","Nydarax Teleport Scrool : 1m each","Red Key : 100k each","Blue Key : 20k each","Green Key : 50k each","Mysterious Artifact : 250k each","Key to 'Disdain' : 50k each","Key to 'Rage' : 200k each","Key to 'Torment' : 200k each","Key to 'Corruption' : 200k each","Portal Charge : 400k each","Soul jar : 1.2m-1.3m","Magnetite : 130k-150k each","Ankh key : 400k each",]
+      Others: ["Ruby : 50k each","Sapphire : 50k each","Emerald : 70k each","Arosite : 80k each","Sandstone Shield : 2m-3m each","Scorpion Shield : 3.5m each","Deadrock Shield : 4m-4.5m each","Ancient Shield : 130m each","Iron Spade : 20k each","Crimsteel Spade : 20k-40k each","Mythan Spade : 50k-130k each","Golemite Spade : 120k-150k each","Ancient Spade : 800k-1m each","Saving Grace : 120k-150k each","Bat Amulet : 200k each","Nature Amulet : 50k each","Amulet of Focus : 3m each","Prospector's Necklace : 4m each","Ruby Necklace : 300k each","Sapphire Necklace : 300k each","Emerald Necklace : 400k each","Arosite Necklace : 450k each","Magnetite Necklace : 3m each","Battle Necklace : 5m each","Scorpion Gauntlets : 500k each","Raptor Gloves : 700k each","Desert Raptor Gloves : 800k each","Ice Raptor Gloves : 1m each","Cactus Gloves : 4m-5m each","Frozen Skull : 35m each","Icy Right Half : 2m each","Icy Left Half : 2m each","Ring of Treasure : 1m each","Nature Ring : 50k each","Bat Ring : 200k each","Ring of Might : 2m each","Infernal Ring : 3m-4m each","Cactus Ring : 8m each","Snake charm : 3m each","Infernal Hammer : 10m each","Ring of Violation : 20m each","Pendant of Serenity : 15m each","Inferno Tome : 100 each","Consume Tome : 120 each","Blizzard Tome : 50 each","Torture Tome : 200-300 each","Lollipop : 1.3m each","Nydarax Teleport Scrool : 1m each","Red Key : 100k each","Blue Key : 20k each","Green Key : 50k each","Mysterious Artifact : 250k each","Key to 'Disdain' : 50k each","Key to 'Rage' : 200k each","Key to 'Torment' : 200k each","Key to 'Corruption' : 200k each","Portal Charge : 400k each","Soul jar : 1.2m-1.3m","Magnetite : 130k-150k each","Ankh key : 400k each",]
     };
 
     // --- Ores için yönlendirme linkleri ---
@@ -597,15 +635,153 @@ header {
 
     function renderHome() {
       content.innerHTML = `
-        <div class="home">
-          <h2>Welcome!</h2>
-          <h3><span class="red">Disclaimer : We are not responsible for any discrepancies in prices!</span></h3>
-          <h4>This server created in 01/09/2025 for help Curse of Aros community</h4>
-          <h4>There you are can search prices of items</h4>
-          <h4>Note : Search full name of items for get good result, tap item name for get information about item and and we will update prices every month.</h4>
-          <h4><span class="eblue">Join my discord server for give suggestions or help me update prices</span> </h4>
-          <a class="btn-discord" href="https://discord.gg/QAZEkeYc6w" target="_blank" rel="noopener">Discord</a>
+<div class="box">
+  <div class="label">Welcome</div>
+  <svg class="border-svg" viewBox="0 0 320 180" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#60a5fa" />
+        <stop offset="50%" stop-color="#3b82f6" />
+        <stop offset="100%" stop-color="#93c5fd" />
+      </linearGradient>
+      <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#34d399" />
+        <stop offset="50%" stop-color="#10b981" />
+        <stop offset="100%" stop-color="#6ee7b7" />
+      </linearGradient>
+    </defs>
+
+    <!-- Siyah iç kutu -->
+    <rect x="6" y="6" width="308" height="168" rx="8" ry="8" fill="#111111" />
+
+    <!-- Mavi çizgi -->
+    <rect x="6" y="6" width="308" height="168" rx="8" ry="8"
+          fill="none"
+          stroke="url(#blueGrad)"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-dasharray="120 832"
+          stroke-dashoffset="0">
+      <animate attributeName="stroke-dashoffset"
+               from="0" to="-952"
+               dur="4s"
+               repeatCount="indefinite" />
+    </rect>
+
+    <!-- Yeşil çizgi, mavi çizgiden 10px sonra başlıyor -->
+    <rect x="6" y="6" width="308" height="168" rx="8" ry="8"
+          fill="none"
+          stroke="url(#greenGrad)"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-dasharray="120 832"
+          stroke-dashoffset="-10">
+      <animate attributeName="stroke-dashoffset"
+               from="-440" to="-1392"
+               dur="4s"
+               repeatCount="indefinite" />
+    </rect>
+  </svg>
+</div>
         </div>
+        <div class="box">
+  <div class="label">Disclaimer : We are not responsible for any discrepancies in prices!</div>
+  <svg class="border-svg" viewBox="0 0 320 180" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#60a5fa" />
+        <stop offset="50%" stop-color="#3b82f6" />
+        <stop offset="100%" stop-color="#93c5fd" />
+      </linearGradient>
+      <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#34d399" />
+        <stop offset="50%" stop-color="#10b981" />
+        <stop offset="100%" stop-color="#6ee7b7" />
+      </linearGradient>
+    </defs>
+
+    <!-- Siyah iç kutu -->
+    <rect x="6" y="6" width="308" height="168" rx="8" ry="8" fill="#111111" />
+
+    <!-- Mavi çizgi -->
+    <rect x="6" y="6" width="308" height="168" rx="8" ry="8"
+          fill="none"
+          stroke="url(#blueGrad)"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-dasharray="120 832"
+          stroke-dashoffset="0">
+      <animate attributeName="stroke-dashoffset"
+               from="0" to="-952"
+               dur="4s"
+               repeatCount="indefinite" />
+    </rect>
+
+    <!-- Yeşil çizgi, mavi çizgiden 10px sonra başlıyor -->
+    <rect x="6" y="6" width="308" height="168" rx="8" ry="8"
+          fill="none"
+          stroke="url(#greenGrad)"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-dasharray="120 832"
+          stroke-dashoffset="-10">
+      <animate attributeName="stroke-dashoffset"
+               from="-440" to="-1392"
+               dur="4s"
+               repeatCount="indefinite" />
+    </rect>
+  </svg>
+</div>
+<div class="box">
+  <div class="label">Note : Search full name of the item to get proper result, Tap the item Name to view detail</div>
+  <svg class="border-svg" viewBox="0 0 320 180" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#60a5fa" />
+        <stop offset="50%" stop-color="#3b82f6" />
+        <stop offset="100%" stop-color="#93c5fd" />
+      </linearGradient>
+      <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#34d399" />
+        <stop offset="50%" stop-color="#10b981" />
+        <stop offset="100%" stop-color="#6ee7b7" />
+      </linearGradient>
+    </defs>
+
+    <!-- Siyah iç kutu -->
+    <rect x="6" y="6" width="308" height="168" rx="8" ry="8" fill="#111111" />
+
+    <!-- Mavi çizgi -->
+    <rect x="6" y="6" width="308" height="168" rx="8" ry="8"
+          fill="none"
+          stroke="url(#blueGrad)"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-dasharray="120 832"
+          stroke-dashoffset="0">
+      <animate attributeName="stroke-dashoffset"
+               from="0" to="-952"
+               dur="4s"
+               repeatCount="indefinite" />
+    </rect>
+
+    <!-- Yeşil çizgi, mavi çizgiden 10px sonra başlıyor -->
+    <rect x="6" y="6" width="308" height="168" rx="8" ry="8"
+          fill="none"
+          stroke="url(#greenGrad)"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-dasharray="120 832"
+          stroke-dashoffset="-10">
+      <animate attributeName="stroke-dashoffset"
+               from="-440" to="-1392"
+               dur="4s"
+               repeatCount="indefinite" />
+    </rect>
+  </svg>
+</div>
+        </div>
+          <a class="btn-discord" href="https://discord.gg/QAZEkeYc6w" target="_blank" rel="noopener">Discord</a>
       `;
     }
 
