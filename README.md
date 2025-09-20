@@ -10,7 +10,7 @@
       height: 100px;
       background: #111111;
       display: flex;
-      padding: 15px;
+      padding: 10px;
       margin: 27px;
       align-items: center;
       justify-content: center;
@@ -137,7 +137,7 @@ header {
     .btn-discord {
       display: flex;
       width: 100px;
-      height: 50px;
+      height: 40px;
       margin-left: 94px;
       padding: 10px 18px;
       border-radius: 12px;
