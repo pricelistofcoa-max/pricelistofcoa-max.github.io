@@ -10,7 +10,7 @@
       height: 100px;
       background: #111111;
       display: flex;
-      padding: 40px;
+      padding: 15px;
       margin: 27px;
       align-items: center;
       justify-content: center;
