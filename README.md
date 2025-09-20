@@ -137,7 +137,7 @@ header {
     .btn-discord {
       display: flex;
       width: 100px;
-      height: 40px;
+      height: 45px;
       margin-left: 94px;
       padding: 10px 18px;
       border-radius: 12px;
