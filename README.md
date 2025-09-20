@@ -137,15 +137,15 @@ header {
     .btn-discord {
       display: flex;
       width: 100px;
-      height: 20px;
-      margin-top: 14px;
+      height: 50px;
+      margin-left: 94px;
       padding: 10px 18px;
       border-radius: 12px;
       background-color: #5865F2;
       color: #fff;
       text-decoration: none;
       justify-content: center;
-      font-weight: ;
+      font-weight: 10px;
       border: none;
       cursor: pointer;
     }
