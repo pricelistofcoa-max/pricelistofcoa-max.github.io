@@ -21,7 +21,7 @@
     .box .label {
       position: relative;
       z-index: 2;
-      font-size: 16px;
+      font-size: 13px;
       text-align: center;
     }
 
