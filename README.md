@@ -35,12 +35,8 @@
     }
 
     @media (max-width:250px){
-      .box {width: 90vw; height: 140px; font-size: 20px;}
+      .box {width: 250px; height: 100px; font-size: 16px;}
     }
-  .red {
-  color: red;
-  font-weight: bold;
-  }
   .eblue {
   color: #5865F2;
   font-weight: bold;
@@ -214,7 +210,7 @@ header {
       Weapons: ["Sharper Mythan Sword : 80k-100k each","Cobalt Sword : 100k-150k each","Chaotic Mythan Sword : 200k each","Varaxite Sword : 300k each","Glacial Blade : 1m-1.2m each","Nature's Blade : 2m each","Spectral Sword : 10m-13m each","Phantom Sword : 15m each","Ancient Scimitar : 130m each","Fire Staff : 50k each","Ice Staff : 50k each","Nature Staff : 50k each","Cursed Staff : 50k each","Elder Fire Staff : 200k  each","Elder Ice Staff : 200k each","Elder Nature Staff : 200k each","Elder Cursed Staff : 200k each","Nightspun Staff : 200k each"],
       Tools: ["Mythan Axe : 100k each","Mythan Pickaxe : 100k each","Mythan Rod : 100k each","Mythan Secateurs : 80k-100k each","Cobalt Axe : 200k-300k each","Cobalt Pickaxe : 200k-300k each","Cobalt Rod : 200k-300k each","Cobalt Secateurs : 100k-200k each","Varaxite Axe : 300k-400k each","Varaxite Pickaxe : 300k-400k each","Varaxite Rod : 300k-400k  each","Varaxite Secateurs : 300k-400k each","Magic Axe : 300k-400k each","Magic Pickaxe : 300k -400k each","Magic Rod : 300k-400k each","Bryomera Secateurs : 30m-40m each","Ancient Axe : 16-17m each","Ancient Pickaxe : 16-17m each","Ancient Rod : 8m-11m each"],
       BossParts: ["Balance fragment :  3m each","Golemite Slab : 3m each","Golemite Shard : 4m each","Eye of Golemite : 2m each","Golemite Orb : 3m each","Golemite Artifact : 1.5m each","Dragon Scale : 15k each","Dragon Eye : 11m each","Dragon Claw : 16m each","Dragon Horn : 2m each","Slivers of Rage : 4m-5m/100 each","Slivers of Corruption : 6m-8m/100 each","Slivers of Disdain : 5m-7m/100 each","Slivers of Torment : 6m-8m/100 each","Leg of Nydarax : 40m-45m each","Eye of Nydarax : 2m each","Gold Key : 300k-350k each","Mummy Bandage : 800k each","Mummy Soul : 1.3m each","Ancient Tablet : 5k each"],
-      EventItems: ["Sugar Brew : each","Party Hat : each","Santa Hat : each","Jingle Top : each","Jingle Pants : each","Candy Cane : each","Easter Egg : each","Bag of Tricks : each","Bag of Sweets : each","Magic Bag of Treats : each","Pumpking Helm : each","Pumpking Sword : each","Pumpking Shield : each","Party Hat 2 : each","Jester Hat : each","Based Santa Hat : each","Scrooge Hat : each","Scrooge Shirt : each","Pack of Snow : each","Xmas Tree Sword : each","Candy Cane Staff : each","Egg Head : each","Hand of Baphomet : each","Head of Baphomet : each","Pumpkin Zombie Hat : each","Party Hat 3 : each","Classy Jacket : each","Classy Pants : each","Sparkling Grapejuice : each","Antlers : each","Christmas Tree Hat : each","Jingle Hat : each","White Present : each","Red Present : each","Gold Present : each","Carrot Launcher : each","Carrotproof Helmet : each","Carrotproof Vest : each","Egg Ring : each","Party Hat 4 : each","Box of Chocolate : each","Box of Pralines : each","Loveshot : each","Arrow Head : each","Heartseeker : each","Eternal Love : each","Lootkin : each","Bionic Skull : each","Bionic Ribcage : each","Bionic Limbs : each","Scream Mask : each","Birthday Cake : each","Party Hat 5 : each","Blue Balloon : each","Red Balloon : each","Yellow Balloon : each","Green Balloon : each","Bunch of Balloons : each","Snowball Ammo : each","Ring of Snow : each","Snowball Launcher : each","Black Santa Hat : each","Lucky Egg : each","Carrot Rocket : each","Bonka's Barrier : each","Eggy Bludgeon : each","Wabbit Hat : each","Party Hat 6 : each","Party-Crasher : each","Smelly Key : each","Leaky Leek : each","Evileek Staff : each","Evileek Shield : each","Evileek Mask : each","Sleekest : each","Chicken Head : each","Chicken Wings : each","Chicken Feathers : each"
+      EventItems: ["Sugar Brew : 250m each","Party Hat : 1b each","Santa Hat : 150m each","Jingle Top : 75m each","Jingle Pants : 75m each","Candy Cane : 15m each","Easter Egg : 700k each","Bag of Tricks : 10m each","Bag of Sweets : 15m each","Magic Bag of Treats : each","Pumpking Helm : 60m each","Pumpking Sword : 1.1b each","Pumpking Shield : 35m each","Party Hat 2 : 40m each","Jester Hat : 50b each","Based Santa Hat : 150m each","Scrooge Hat : 7m each","Scrooge Shirt : 8m each","Pack of Snow : 1.1b each","Xmas Tree Sword : 4m each","Candy Cane Staff : 15m each","Egg Head : 350m each","Hand of Baphomet : 300m each","Head of Baphomet : 250m each","Pumpkin Zombie Hat : 60m  each","Party Hat 3 : 3m each","Classy Jacket : 15m each","Classy Pants : 15m each","Sparkling Grapejuice : 15m each","Antlers : 1m each","Christmas Tree Hat : 15m each","Jingle Hat : 2b each","White Present : 400k each","Red Present : 15m each","Gold Present : 250m each","Carrot Launcher : 130m each","Carrotproof Helmet : 70m each","Carrotproof Vest : 70m each","Egg Ring : 350m each","Party Hat 4 : 5m each","Box of Chocolate : 7m each","Box of Pralines : 10m each","Loveshot : 50k each","Arrow Head : 4m each","Heartseeker : 150m each","Eternal Love : 11b each","Lootkin : 35m each","Bionic Skull : 30m each","Bionic Ribcage : 20m each","Bionic Limbs : 20m each","Scream Mask : 5b each","Birthday Cake : 100k each","Party Hat 5 : 6m each","Blue Balloon : 10m each","Red Balloon : 10m each","Yellow Balloon : 10m each","Green Balloon : 10m each","Bunch of Balloons : 750m each","Snowball Ammo : 50k each","Ring of Snow : 15m each","Snowball Launcher : 8m each","Black Santa Hat : 280m each","Lucky Egg : 10m each","Carrot Rocket : 50k each","Bonka's Barrier : 12m each","Eggy Bludgeon : 15m each","Wabbit Hat : 450m each","Party Hat 6 : 2m each","Party-Crasher : 60m each","Smelly Key : each","Leaky Leek : 35k each","Evileek Staff : 2m each","Evileek Shield : 2m each","Evileek Mask : 6m each","Sleekest : 100m each","Chicken Head : 1m each","Chicken Wings : 1m each","Chicken Feathers : 1m each"
     ],
       Others: ["Ruby : 50k each","Sapphire : 50k each","Emerald : 70k each","Arosite : 80k each","Sandstone Shield : 2m-3m each","Scorpion Shield : 3.5m each","Deadrock Shield : 4m-4.5m each","Ancient Shield : 130m each","Iron Spade : 20k each","Crimsteel Spade : 20k-40k each","Mythan Spade : 50k-130k each","Golemite Spade : 120k-150k each","Ancient Spade : 800k-1m each","Saving Grace : 120k-150k each","Bat Amulet : 200k each","Nature Amulet : 50k each","Amulet of Focus : 3m each","Prospector's Necklace : 4m each","Ruby Necklace : 300k each","Sapphire Necklace : 300k each","Emerald Necklace : 400k each","Arosite Necklace : 450k each","Magnetite Necklace : 3m each","Battle Necklace : 5m each","Scorpion Gauntlets : 500k each","Raptor Gloves : 700k each","Desert Raptor Gloves : 800k each","Ice Raptor Gloves : 1m each","Cactus Gloves : 4m-5m each","Frozen Skull : 35m each","Icy Right Half : 2m each","Icy Left Half : 2m each","Ring of Treasure : 1m each","Nature Ring : 50k each","Bat Ring : 200k each","Ring of Might : 2m each","Infernal Ring : 3m-4m each","Cactus Ring : 8m each","Snake charm : 3m each","Infernal Hammer : 10m each","Ring of Violation : 20m each","Pendant of Serenity : 15m each","Inferno Tome : 100 each","Consume Tome : 120 each","Blizzard Tome : 50 each","Torture Tome : 200-300 each","Lollipop : 1.3m each","Nydarax Teleport Scrool : 1m each","Red Key : 100k each","Blue Key : 20k each","Green Key : 50k each","Mysterious Artifact : 250k each","Key to 'Disdain' : 50k each","Key to 'Rage' : 200k each","Key to 'Torment' : 200k each","Key to 'Corruption' : 200k each","Portal Charge : 400k each","Soul jar : 1.2m-1.3m","Magnetite : 130k-150k each","Ankh key : 400k each",]
     };
@@ -685,7 +681,55 @@ header {
 </div>
         </div>
         <div class="box">
-  <div class="label">Disclaimer : We are not responsible for any discrepancies in prices!</div>
+  <div class="label">Disclaimer : We are not responsible for any <br>discrepancies in prices!</div>
+  <svg class="border-svg" viewBox="0 0 320 180" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#FF0000" />
+        <stop offset="50%" stop-color="#FF0000" />
+        <stop offset="100%" stop-color="#FF0000" />
+      </linearGradient>
+      <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#FF0000" />
+        <stop offset="50%" stop-color="#FF0000" />
+        <stop offset="100%" stop-color="#FF0000" />
+      </linearGradient>
+    </defs>
+
+    <!-- Siyah iç kutu -->
+    <rect x="6" y="6" width="308" height="168" rx="8" ry="8" fill="#111111" />
+
+    <!-- Mavi çizgi -->
+    <rect x="6" y="6" width="308" height="168" rx="8" ry="8"
+          fill="none"
+          stroke="url(#redGrad)"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-dasharray="120 832"
+          stroke-dashoffset="0">
+      <animate attributeName="stroke-dashoffset"
+               from="0" to="-952"
+               dur="4s"
+               repeatCount="indefinite" />
+    </rect>
+
+    <!-- Yeşil çizgi, mavi çizgiden 10px sonra başlıyor -->
+    <rect x="6" y="6" width="308" height="168" rx="8" ry="8"
+          fill="none"
+          stroke="url(#redGrad)"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-dasharray="120 832"
+          stroke-dashoffset="-10">
+      <animate attributeName="stroke-dashoffset"
+               from="-440" to="-1392"
+               dur="4s"
+               repeatCount="indefinite" />
+    </rect>
+  </svg>
+</div>
+<div class="box">
+  <div class="label">All prices are from Discord </div>
   <svg class="border-svg" viewBox="0 0 320 180" preserveAspectRatio="none">
     <defs>
       <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -733,7 +777,7 @@ header {
   </svg>
 </div>
 <div class="box">
-  <div class="label">Note : Search full name of the item to get proper result, Tap the item Name to view detail</div>
+  <div class="label">Note : Search full name of <br>the item to get proper result,<br> Tap the item Name<br> to view detail</div>
   <svg class="border-svg" viewBox="0 0 320 180" preserveAspectRatio="none">
     <defs>
       <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
