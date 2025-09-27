@@ -10,7 +10,7 @@
       height: 100px;
       background: #111111;
       display: flex;
-      padding: 10px;
+      padding: 14px;
       margin: 27px;
       align-items: center;
       justify-content: center;
@@ -21,7 +21,7 @@
     .box .label {
       position: relative;
       z-index: 2;
-      font-size: 13px;
+      font-size: 16px;
       text-align: center;
     }
 
