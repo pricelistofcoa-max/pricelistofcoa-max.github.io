@@ -777,7 +777,7 @@ header {
   </svg>
 </div>
 <div class="box">
-  <div class="label">Search full name of <br>the item to get proper <br> result, Tap the item Name<br> to view detail</div>
+  <div class="label">Search full name of the item <br> to get proper result, <br> Tap the item Name<br> to view detail</div>
   <svg class="border-svg" viewBox="0 0 320 180" preserveAspectRatio="none">
     <defs>
       <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
